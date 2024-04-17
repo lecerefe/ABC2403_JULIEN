@@ -1,3 +1,4 @@
+# Rechercher les états possibles de la boîte de conserve
 
 1 etats : Ouvrire la boite > Remplire la Boite > Fermer la boite
 
