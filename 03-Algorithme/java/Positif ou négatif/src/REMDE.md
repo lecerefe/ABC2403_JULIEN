@@ -12,6 +12,6 @@ lire le nombre
 
 
 si nombre < 0 <--negatif
-si nombre => 0 <-- positif
+sinon possitif
 
 Afficher 

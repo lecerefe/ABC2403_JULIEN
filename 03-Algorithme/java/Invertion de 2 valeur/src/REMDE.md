@@ -1,5 +1,5 @@
 # Invertion de 2 valeur 
-
+```
 VARIABLE
 
 A est un Nombre entier
@@ -8,10 +8,17 @@ B est un Nombre entier
 
 TRAITEMENT 
 
-Afficher la valeur de A
+Afficher "saisir deux nombre"
 
-Afficher la valeur de B
+Lire A <--
+lire B <--
 
-Mettre le contenu de A dans B et celui de B dans A
+Afficher " avant la  permutation a"<-- A "est" b<-- B
 
-Afficher à nouveau la valeur de A puis la valeur de B
+A<-- A + B
+B<-- A - B
+A<-- A - B
+
+Afficher "Apres la Permutation: a<--A est b<--B
+
+```

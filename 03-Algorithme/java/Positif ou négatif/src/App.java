@@ -15,9 +15,11 @@ public class App {
 		if(nombre < 0)
 		{
 			System.out.println("Le nombre est Negatif");
+			System.out.println("Looser ");
 		}
 		else {
 			System.out.println("Le nombre est Positif");
+			System.out.println("Bienjoué ");
 		}
 		
 		sc.close();

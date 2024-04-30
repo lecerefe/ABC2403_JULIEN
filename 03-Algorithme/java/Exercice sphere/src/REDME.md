@@ -1,15 +1,32 @@
 # Exercise calculer le rayon d'une Sphère
 
+```
 VARIABLE
 
-rayon
-aire
+R est un nombre reel
+
+aire est un Nombre reel
+
+Volume est un nombre reel
 
 TRAITEMENT
-ECRIRE Definir la valeur de rayon
 
-Lire la valeur donner a rayon 
+ECRIRE "Saisir Votre nombre"
 
-Faire le calcul aire = 4 * PI * Rayon²
-    
-Ecrire la valeur de aire
+LIRE R 
+
+aire <-- 4 * PI * R²
+
+volume <-- 4 PI R²/3 
+
+
+RESULTAT
+
+ECRIRE " l'aire de la sphère est de ", aire
+
+ECRIRE " Le volume de la sphère est de ", volume
+
+
+
+
+```
