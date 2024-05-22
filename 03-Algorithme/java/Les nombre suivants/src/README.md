@@ -11,15 +11,16 @@ Les 10 nombres après 17 sont: 18, 19 ,20 ,21 ,22 ,23 ,24 ,25 ,26 ,27
 
 VARIABLE
 
-nombreDepart est un nombre entier
-i est un nombre entier
-TRAINTEMT
+nombreDepart est un entier
+i est un entier
 
-i <--- 0
 
+TRAITEMENT 
 ECRIRE "Saisir un nombre de depart"
-	LIRE nombreDepart
-	
-TANT QUE i = 0 ALORS
-	i++
-	ECIRE nombre++
+LIRE nombreDepart
+
+
+POUR (i<--- nombreDepart + 1 i<= nombreDepart + 10 i++)
+ECRIRE i
+ 
+
