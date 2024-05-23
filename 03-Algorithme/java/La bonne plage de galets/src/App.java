@@ -1,11 +1,11 @@
-
+ 
 import java.util.*;
 
 public class App {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int nombre;
+		int  ,;
 
 		do {
 			System.out.println("Veillez saisir un nombre entre 10 est 20: ");
