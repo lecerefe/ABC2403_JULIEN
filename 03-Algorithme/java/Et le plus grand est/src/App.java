@@ -27,7 +27,7 @@ public class App {
 				plusPetit = nombre;
 			}
 		}
-		System.out.println("Le plus grand des nombre saisi est : " + plusGrand + " " + plusPetit + "était le nombre le plus petit qui a été saisi");
+		System.out.println("Le plus grand des nombre saisi est : " + plusGrand + " et " + plusPetit + " était le nombre le plus petit qui a été saisi");
 
 		sc.close();
 	}
