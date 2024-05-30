@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class App {
 
@@ -6,8 +6,8 @@ public class App {
 	
 		Scanner sc = new Scanner(System.in);
 		
-		Float prix;
-		Float total;
+		Float prix = 1f;
+		Float total = 0f;
 		Float montantpaye;
 		Float renduMonnaie;
 		int billets5Euro;
@@ -16,17 +16,17 @@ public class App {
 		int piece20Cents;
 		int piece10Cents;
 	
-
-		do {
-			System.out.println("Saisir un prix");
-					 prix = sc.nextFloat();
 		
-					 
-					 
-		}while (prix != 0);
+		while (prix != 0) {
+			System.out.println("Saisir un prix : ");
+				prix = sc.nextFloat();
+			total =+ prix;
+			
+			if(total )
+		}
 		
+		System.out.println("Voici le total : " + (float)total);
 		
-		System.out.println("Voici le total : " + total);
 		sc.close();
 	}
 		
