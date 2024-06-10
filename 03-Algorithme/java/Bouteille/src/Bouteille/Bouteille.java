@@ -79,4 +79,20 @@ public class Bouteille {
 		
 		return videz;
 	}
+	public boolean remplireComplet() {
+		 boolean rempliR = false;
+		 if(this.contenuEnLitre != this.contenanceEnLitre) {
+			 rempliR = true;
+			 this.contenuEnLitre = this.contenanceEnLitre;
+		 }
+		 return rempliR;
+	}
+	public boolean videzComplet() {
+		boolean viderR = false;
+	if(this.contenuEnLitre != 0) {
+		viderR = true;
+		this.contenuEnLitre = 0;
+	}
+	return viderR;
+	}
 }
