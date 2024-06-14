@@ -36,63 +36,67 @@ public class Bouteille {
 
 	public boolean estPlein() {
 		boolean plein;
-		if(this.contenuEnLitre == this.contenanceEnLitre) {
-		plein = true;
-		} else plein = false;
+		if (this.contenuEnLitre == this.contenanceEnLitre) {
+			plein = true;
+		} else
+			plein = false;
 		return plein;
 	}
+
 	public boolean fermetur() {
 		boolean fermerOn;
-		if(this.ouvert == true) {
+		if (this.ouvert == true) {
 			fermerOn = true;
 			this.ouvert = false;
 		}
 		return this.ouvert;
 	}
-	
+
 	public boolean ouvertur() {
 		boolean ouvertOn;
-		if(this.ouvert == false) {
+		if (this.ouvert == false) {
 			ouvertOn = true;
 			this.ouvert = true;
 		}
 		return this.ouvert;
 	}
-	public boolean remplissage() {
-		 
+
+	public boolean remplissage(float remplCl) {
+
 		boolean rempl = false;
-		float remplCl = (float) 0.10;
 		
-		if (this.contenuEnLitre != this.contenanceEnLitre) {
+		float dif = this.contenanceEnLitre - this.contenuEnLitre;
+		if ( this.ouvert == true &&  dif >= remplCl) {
 			rempl = true;
 			this.contenuEnLitre += remplCl;
 		}
 		return rempl;
 	}
-	public boolean vidage() {
-		boolean videz = true;
-		float videzCl = (float) 0.10;
-		if(this.contenuEnLitre == 0) {
-			videz = false;
-			}
-		this.contenuEnLitre -= videzCl;
-		
+
+	public boolean vidage(float videzCl) {
+		boolean videz = false;
+		if (this.ouvert == true && this.contenuEnLitre >= videzCl) {
+			this.contenuEnLitre -= videzCl;
+			videz = true;
+		}
 		return videz;
 	}
+
 	public boolean remplireComplet() {
-		 boolean rempliR = false;
-		 if(this.contenuEnLitre != this.contenanceEnLitre) {
-			 rempliR = true;
-			 this.contenuEnLitre = this.contenanceEnLitre;
-		 }
-		 return rempliR;
+		boolean rempliR = false;
+		if (this.ouvert == true && this.contenuEnLitre != this.contenanceEnLitre) {
+			rempliR = true;
+			this.contenuEnLitre = this.contenanceEnLitre;
+		}
+		return rempliR;
 	}
+
 	public boolean videzComplet() {
 		boolean viderR = false;
-	if(this.contenuEnLitre != 0) {
-		viderR = true;
-		this.contenuEnLitre = 0;
-	}
-	return viderR;
+		if (this.ouvert == true && this.contenuEnLitre != 0) {
+			this.contenuEnLitre = 0;
+			viderR = true;
+		}
+		return viderR;
 	}
 }
