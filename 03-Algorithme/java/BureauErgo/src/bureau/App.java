@@ -6,15 +6,15 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		JFrame window = new JFrame();
-		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		window.setResizable(false);
-		window.setTitle("BureauErgo");
-		window.setSize(1000, 800);
-		window.setVisible(true);
-		window.setLocation(140, 70);
-		window.setLocationRelativeTo(null);
-		window.setBackground(Color.blue);
+	//	JFrame window = new JFrame();
+	//	window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	//	window.setResizable(false);
+	//	window.setTitle("BureauErgo");
+	//	window.setSize(1000, 800);
+	//	window.setVisible(true);
+	//	window.setLocation(140, 70);
+	//	window.setLocationRelativeTo(null);
+	//	window.setBackground(Color.blue);
 		
 		//BureauPanel bureauPanel = new BureauPanel();
 		
@@ -25,6 +25,8 @@ public class App {
 		System.out.println(bureauErg2.branchement());
 
 		System.out.println(bureauErg2.moreheight(0.30));
+		
+		System.out.println(bureauErg2.goParam());
 		
 		
 	}

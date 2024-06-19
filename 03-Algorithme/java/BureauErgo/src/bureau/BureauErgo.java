@@ -39,17 +39,13 @@ public class BureauErgo {
 		this.param3 = _bureauErgoARecopier.param3;
 	}
 	public boolean branchement() {
-		boolean brancherOn;
 		if(this.electricity == false) {
-			brancherOn = true;
 			this.electricity = true;
 		}
 		return this.electricity;
 	}
 	public boolean debranchement() {
-		boolean debrancherOn;
 		if(this.electricity == true ) {
-			debrancherOn = true;
 			this.electricity = false;
 		}
 		return this.electricity;
@@ -68,6 +64,16 @@ public class BureauErgo {
 		return this.bureauPos;
 	}
 	public float goParam() { 
-		
+		this.bureauPos = param1;
+		return this.bureauPos;
 	}
+	public float goParam2() {
+		this.bureauPos = param2;
+		return this.bureauPos;
+	}
+	public float goParam3() {
+		this.bureauPos = param3;
+		return this.bureauPos;
+	}
+	
 }
