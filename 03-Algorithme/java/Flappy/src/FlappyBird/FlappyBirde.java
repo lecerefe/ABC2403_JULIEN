@@ -8,10 +8,6 @@ import javax.swing.*;
 
 public class FlappyBirde extends JPanel implements ActionListener, KeyListener {
 
-	/**
-	 * 
-	 */
-
 	int boardWidth = 360;
 	int boardHeight = 640;
 
@@ -74,7 +70,7 @@ public class FlappyBirde extends JPanel implements ActionListener, KeyListener {
 		addKeyListener(this);
 
 		backgroundImg = new ImageIcon(getClass().getResource("/tile/flappybirdbg.png")).getImage();
-		birdImg = new ImageIcon(getClass().getResource("/tile/AllanBird-removebg-preview.png")).getImage();
+		birdImg = new ImageIcon(getClass().getResource("/tile/AllanBirdP.png")).getImage();
 		topPipeIgm = new ImageIcon(getClass().getResource("/tile/toppipe.png")).getImage();
 		bottomPipeImg = new ImageIcon(getClass().getResource("/tile/bottompipe.png")).getImage();
 
