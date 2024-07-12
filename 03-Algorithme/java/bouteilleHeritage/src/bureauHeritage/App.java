@@ -6,6 +6,8 @@ public class App {
 		
 		BureauErgo bureauErg = new BureauErgo();
 
+		
+		bureauErg.positionnerALaHauteur(bureauErg.hauteur1EnCM);
 	}
 
 }
